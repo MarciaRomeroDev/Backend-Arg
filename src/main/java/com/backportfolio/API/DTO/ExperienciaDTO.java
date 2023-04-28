@@ -1,0 +1,60 @@
+
+package com.backportfolio.API.DTO;
+
+import jakarta.validation.constraints.NotBlank;
+
+
+public class ExperienciaDTO {
+    @NotBlank (message = "El cargo/ puesto de la experiencia es obligatorio")
+    private String titulo;
+    @NotBlank (message = "La fecha inicio-fin es obligatoria")
+    private String fecha;
+    @NotBlank (message = "El nombre de la empresa es obligatoria")
+    private String lugar;
+    @NotBlank (message = "Se debe poner una pequeña descripcion del cargo")
+    private String descripcion;
+
+    public ExperienciaDTO() {
+    }
+
+    public ExperienciaDTO(String titulo, String fecha, String lugar, String descripcion) {
+        this.titulo = titulo;
+        this.fecha = fecha;
+        this.lugar = lugar;
+        this.descripcion = descripcion;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getLugar() {
+        return lugar;
+    }
+
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+    
+    
+}
