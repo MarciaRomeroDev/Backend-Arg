@@ -1,5 +1,5 @@
 
-FROM amazoncorretto:19-alpine-jdk
+FROM amazoncorretto:17-alpine-jdk
 
 
 
