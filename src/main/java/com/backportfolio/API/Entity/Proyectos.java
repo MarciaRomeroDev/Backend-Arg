@@ -14,6 +14,7 @@ public class Proyectos {
     private String titulo;
     private String descripcion;
     private String url_imagen;
+    private String url_repositorio;
 
     public Proyectos() {
     }
@@ -25,7 +26,10 @@ public class Proyectos {
     }
 
     public Proyectos(String titulo, String descripcion, String url_imagen, String url_repositorio) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+        this.url_imagen = url_imagen;
+        this.url_repositorio = url_repositorio;
     }
 
     public int getId() {
@@ -59,10 +63,12 @@ public class Proyectos {
     public void setUrl_imagen(String url_imagen) {
         this.url_imagen = url_imagen;
     }
+    public String getUrl_repositorio() {
+        return url_repositorio;
+    }
 
     public void setUrl_repositorio(String url_repositorio) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.url_repositorio = url_repositorio;
     }
-    
-    
+
 }
